@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Javascript aula 9</title>
+	<meta charset="utf-8"/>
+
+	<script type="text/javascript">
+		var nota = window.prompt("Nota do aluno: ");
+		var res;
+
+		//aprovado com louvor    >  95
+		//aprovado               >= 60
+		//recuperação            >= 40 && < 60
+		//reprovado com louvor   < 20	
+
+
+		if(nota > 94) {
+			res = "Aprovado com louvor";
+		} else if(nota > 59) {
+			res = "Aprovado";
+		} else if(nota > 39) {
+			res = "Recuperação";
+		} else if(nota > 19) {
+			res = "Reprovado";
+		} else {
+			res = "Reprovado com louvor";
+		}
+
+		document.write(res);
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 24</title>
+	<meta charset="utf-8"/>
+
+	<script type="text/javascript">
+		// 06/11/2018
+	</script>
+
+</head>
+<body>
+
+	<p id="texto">Olá mundo!</p>
+	<input type="text" id="cxtexto" value="Oi oi!">
+	<div id="dv">Texto da DIV</div>
+
+	<script type="text/javascript">
+		
+		var cxt = document.getElementById("cxtexto").value = "Curso de Javascript";
+		//alert(cxt);
+
+		var txt = document.getElementById("texto").innerHTML = "Olá mundo alterado!!";
+		//alert(txt);
+
+		document.getElementById("dv").innerHTML = "NOVO TEXTO!";
+
+
+
+	</script>
+
+</body>
+</html>
