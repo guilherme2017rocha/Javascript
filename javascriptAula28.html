@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 28</title>
+	<meta charset="utf-8"/>
+
+	<script type="text/javascript">
+		// 13/11/2018
+	</script>
+
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		var dt = new Date();
+
+		var ndt = new Date(1978, 02, 07, 10, 10, 10); //Ano, Mes, Dia, Hora, Min, Seg, Mil
+		//ndt.setDate(dt.getDate() + 1);
+		//ndt.setFullYear(dt.getFullYear()+1);
+
+		var diasem = ndt.getDay();
+		var dia = ndt.getDate();
+		var mes = ndt.getMonth();
+		var ano = ndt.getFullYear();
+
+		var horas = ndt.getHours();
+		var minutos = ndt.getMinutes();
+		var segundos = ndt.getSeconds();
+
+		var meses = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+		var sem = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+
+
+		document.write(sem[diasem] + ", " + dia + " de " + meses[mes] + " de " + ano + "<br/>");
+
+		horas++;
+		document.write(horas + ":" + minutos + ":" + segundos);
+
+	</script>
+
+</body>
+</html>
