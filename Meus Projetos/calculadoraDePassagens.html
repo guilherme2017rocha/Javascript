@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de Passagens</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+
+        input {
+            font: normal 20pt Arial;
+        }
+
+        fieldset#setCampo {
+            width: max-content;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <label>Passagem R$</label>
+    <input type="number" id="preco" placeholder="4.05" min="0">
+    <br/><br/>
+
+    <label>Disponível R$</label>
+    <input type="number" id="preco" min="0">
+    <br/><br/>
+
+    <fieldset id="setCampo">
+        <legend>Dias da semana que deseja usar o transporte:</legend>
+        <input type="checkbox" class="dia" id="seg">Segunda
+        <input type="checkbox" class="dia" id="ter">Terça
+        <input type="checkbox" class="dia" id="qua">Quarta
+        <input type="checkbox" class="dia" id="qui">Quinta
+        <input type="checkbox" class="dia" id="sex">Sexta
+        <input type="checkbox" class="dia" id="sab">Sábado
+        <input type="checkbox" class="dia" id="dom">Domingo
+    </fieldset>
+    <br/>
+
+    <fieldset id="setCampo">
+        <legend>Dias da semana que deseja usar uma vez:</legend>
+        <input type="checkbox" class="dia" id="seg">Segunda
+        <input type="checkbox" class="dia" id="ter">Terça
+        <input type="checkbox" class="dia" id="qua">Quarta
+        <input type="checkbox" class="dia" id="qui">Quinta
+        <input type="checkbox" class="dia" id="sex">Sexta
+        <input type="checkbox" class="dia" id="sab">Sábado
+        <input type="checkbox" class="dia" id="dom">Domingo
+    </fieldset>
+    <br/><br/>
+
+    <input type="button" value="Calcular" onclick="calcular()" style="padding: 10px 20px;">
+    <div class="resp"></div>
+
+    <script>
+    
+        var i = 0
+        var semana = [false, false, false, false, false, false, false]
+        function calcular() {
+            let dias = window.document.querySelectorAll('input.dia')
+            for(let j = 0; j < 6; j++) {
+               semana[j] = dias[j].checked
+            }
+            var atual = 'seg'
+            window.alert(semana)
+        }
+
+    </script>
+
+</body>
+</html>

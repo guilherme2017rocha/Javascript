@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 29</title>
+	<meta charset="utf-8"/>
+
+	<script type="text/javascript">
+		// 13/11/2018
+
+		var valor = 59;
+		//var mt = Math.SQRT1_2;
+		//var mt = Math.ceil(valor);
+		//var mt = Math.floor(valor);
+		//var mt = Math.round(valor);
+		//var mt = Math.pow(valor, 10);
+		//var mt = Math.sqrt(valor);
+
+		var angulo = 45;
+		var c = Math.cos(angulo * Math.PI/180);
+		var s = Math.sin(angulo * Math.PI/180);
+		document.write("Angulo: "+ angulo + "<br/>Cosseno: " + c + "<br/>Seno: " + s + "<br/>");
+
+		document.write("<hr/>");
+
+		for (var i = 0; i < 6; i++) {
+			document.write(Math.round(Math.random()*valor+1)+"<br/>");	
+		}
+
+		document.write("<hr/>");
+
+		//var v2 = Math.max(1, 2, 3, 4, 5, 6, 7, 8);
+		var v2 = Math.min(1, 2, 3, 4, 5, 6, 7, 8);
+		document.write(v2);
+
+
+		//var mt = Math.round(Math.random()*valor);
+
+		//document.write(mt);
+		//document.write(Math.floor(10/3) + " resto " + 10%3);
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
